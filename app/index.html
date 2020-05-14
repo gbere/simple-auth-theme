@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>auth theme</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/alerts.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="alert alert-success">
+      <span>Lorem ipsum dolor sit amet consectetur adipiscing elit lacinia urna, litora mi potenti aenean feugiat euismod netus ultricies dictum sed, pretium mauris fermentum dapibus neque purus quisque inceptos.</span>
+    </div>
+    <div class="alert alert-danger">
+      <span>{{ message | raw }}</span>
+    </div>
+    <div class="alert alert-warning">
+      <span>{{ message | raw }}</span>
+    </div>
+    <div class="alert alert-info">
+      <span>{{ message | raw }}</span>
+    </div>
+    <div class="layout">
+      <div class="auth">
+        <div class="auth-container">
+          <div class="auth-modal">
+            <div class="auth-modal-table">
+              <div class="auth-modal-table-row">
+                <div class="auth-modal-body">
+                  <div class="auth-logo">
+                    <img src="images/logo.svg" alt="Simple Auth Logo">
+                  </div>
+                  <div class="auth-modal-error">
+                    <span>
+                      I'm a global error message
+                    </span>
+                  </div>
+                  <form class="auth-form">
+                    <div class="input-text-wrap">
+                      <label for="email">Email</label>
+                      <input id="email" type="email">
+                    </div>
+                    <div class="input-text-wrap">
+                      <label for="password">Password</label>
+                      <input id="password" type="password">
+                      <ul class="auth-form-error">
+                        <li>I'm a form field error message.</li>
+                      </ul>
+                    </div>
+                    <div class="forgot-password-wrap">
+                      <a href="#">Forgot your password?</a>
+                    </div>
+                    <div class="checkbox-wrap">
+                      <label>
+                        <input type="checkbox" id="remember_me" name="_remember_me"> Remember session
+                      </label>
+                    </div>
+                    <div class="auth-btn">
+                      <button class="btn btn-primary" type="submit">Log In</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="auth-modal-table-row">
+                <div class="auth-modal-footer">
+                  Don't have an account?
+                  <a href="#">Sign up!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- build:js scripts/vendor.js -->
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

@@ -1,0 +1,33 @@
+.alert {
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+
+  span {
+    display: block;
+    margin: 0 auto;
+    max-width: 625px;
+    line-height: 1.5;
+  }
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+}
+
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+}
+
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
